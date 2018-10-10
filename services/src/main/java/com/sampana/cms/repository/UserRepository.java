@@ -8,7 +8,6 @@ import com.sampana.cms.model.User;
 
 
 @Repository("userRepository")
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findByEmail(String email);
+public interface UserRepository extends JpaRepository<User, Integer> {
     
 }
